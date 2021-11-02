@@ -1,0 +1,38 @@
+{
+    "schemaVersion":1,
+    "id":"advancements",
+    "version":"${version}",
+    "name":"Advancements",
+    "description":"Advancements system",
+    "authors":[
+        "AgeOfWar"
+    ],
+    "contact":{
+        "homepage":"https://github.com/PureOrigins/Advancements",
+        "issues":"https://github.com/PureOrigins/Advancements/issues",
+        "sources":"https://github.com/PureOrigins/Advancements"
+    },
+    "license":"GNU Lesser General Public License version 3 (LGPLv3)",
+    "icon":"assets/advancements/icon.png",
+    "environment":"*",
+    "entrypoints": {
+        "main": [
+            {
+                "adapter": "kotlin",
+                "value": "it.pureorigins.advancements.Advancements"
+            }
+        ]
+    },
+    "depends":{
+        "fabricloader":">=0.11.6",
+        "fabric":"*",
+        "fabric-language-kotlin":">=1.6.3+kotlin.1.5.21",
+        "minecraft":"1.17.x",
+        "java":">=16",
+        "pureconfiguration": "^1.0.5",
+        "kotlin-database":  "^1.0.0"
+    },
+    "mixins": [
+        "advancements.mixins.json"
+    ]
+}

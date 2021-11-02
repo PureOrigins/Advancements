@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "it.pureorigins.advancements.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "JsonDataLoaderMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
